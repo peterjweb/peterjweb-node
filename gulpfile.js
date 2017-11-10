@@ -10,16 +10,18 @@ gulp.task('serve', ['sass'], function() {
     server: "./"
   });
 
-  gulp.watch('scss/*.scss', ['sass']);
+  gulp.watch('scss/**/*.scss', ['sass']);
   gulp.watch('*.html').on('change', browserSync.reload);
   gulp.watch('js/*.js').on('change', browserSync.reload);
+  console.log("hello from sass");
 });
 
 gulp.task('sass', function() {
-  return gulp.src('scss/*.scss')
+  return gulp.src('scss/**/*.scss')
   .pipe(sass())
   .pipe(gulp.dest('css/'))
   .pipe(browserSync.stream());
+  console.log("hello from sass");
 });
 
 gulp.task('default', ['serve']);

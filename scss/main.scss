@@ -1,0 +1,46 @@
+/* Using 7-1 Architecture for directory structure */
+@charset 'UTF-8';
+
+// 1. Base stuff
+@import
+  'base/color',
+  'base/typography',
+  'base/reset';
+
+// 2. Components
+@import
+  'components/navigation',
+  'components/buttons';
+
+// 3. Helpers
+@import
+  'helpers/variables',
+  'helpers/functions',
+  'helpers/mixins';
+
+// 4. Layout-related sections
+@import
+  'layout/grid',
+  'layout/header',
+  'layout/sidebar',
+  'layout/footer';
+
+// 5. Page-specific styles
+@import
+  'pages/about',
+  'pages/contact',
+  'pages/home';
+
+// 6. Themes
+//@import
+
+// 7. Vendors
+//@import
+
+
+
+
+
+
+
+
